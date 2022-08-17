@@ -2,11 +2,18 @@
 <h1>Working With Angular & TypeScript !</h1> 
 <h1>The Angular Application Is Working :-)</h1>
 
-<!-- ******************** -->
-<!-- Alternate Solution   -->
-<!-- ******************** -->
-<!-- <app-menu menuItems="{{menuItems}}"></app-menu> -->
+<!-- *************************** -->
+<!--  Import to Use This Format  -->
+<!--          ONLY               -->
+<!--  [menuItems] = "menuItems"  -->
+<!--        NEVER USE            -->
+<!--  menuItems="{{menuItems}}   -->
+<!--        NEVER USE            -->
+<!--  price = {{10}}             -->
+<!-- *************************** -->
 
 <app-menu [menuItems]="menuItems"></app-menu>
 <app-main></app-main>
 <app-footer></app-footer>
+<br>
+

@@ -38,7 +38,8 @@
    <ion-icon slot="end" name="star"></ion-icon>
  </ion-button>
   
- <button ion-button (click)="ionOnlyDescription()">
+ <button ion-button (click)="ionOnlyDescription()" 
+    title="Work With the (click) Event">
     <ion-icon color="danger" 
               shape="round" 
               size="default" 
@@ -46,10 +47,29 @@
               name="star"></ion-icon>   
         Text to Display
  </button>
-
   
  <!-- Sizes -->
   <ion-button size="large">Large</ion-button>
   <ion-button size="default">Default</ion-button>
   <ion-button size="small">Small</ion-button>
+</div>
+
+<br>
+
+<div style="margin-left: 35px;">
+  <button [ngStyle]="{
+      'background-color': totalPrice|color,
+      'font-size': '25px',
+      'font-weight': 'bold',
+      'border': '2px solid black'
+  }" title="Work With Color Pipe">Total {{totalPrice | number:'.2'}} CHF</button>
+
+  &nbsp;&nbsp;&nbsp;
+
+  <button [ngStyle]="{
+      'background-color': status|isAvailable,
+      'font-size': '25px',
+      'font-weight': 'bold',
+      'border': '2px solid black'
+    }" title="Work With isAvailable Pipe">{{status}}</button>
 </div>

@@ -9,6 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   footer = "ORDER - 0.00 CHF";
+  totalPrice : number = 100.00;
+
+  // *************************************
+  // Test The Curent Status of The Worker
+  // *************************************
+  status:string = "NOT Available";
+  //status:string = "Available";
 
   constructor() {     
   }

@@ -16,8 +16,8 @@ import { IonicModule } from '@ionic/angular';
     MenuComponent,
     FooterComponent,
     MainComponent,
-    ColorPipe,
-    IsAvailablePipe
+    ColorPipe,        //  Added By Angualar
+    IsAvailablePipe   //  Added By Angualar
   ],
   imports: [
     BrowserModule,

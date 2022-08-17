@@ -8,28 +8,49 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ColorPipe implements PipeTransform {
 
   transform(pValue: number): string {
+    const color = pValue > 0 ? 'green' : 'red';
+    return color;
 
-     if (pValue < 5) {
-      return "Red";
-     } else {
-      return "Green";
-     }
-     
+    // *****************************
+    //  This Alternative also Work
+    // *****************************
+
+    //  if (pValue < 5) {
+    //   return "red";
+    //  } else {
+    //   return "green";
+    //  }
+
+    
+    // *******************
+    //  Nothing Work Here    
+    // *******************
     // <ng-template #thenRed>
     //  return "Red";
     // </ng-template>
 
+    
+    // *******************
+    //  Nothing Work Here    
+    // *******************
     // <ng-template #thenGreen>
     //  return "Green";
     // </ng-template>
 
 
+    // *******************
+    //  Nothing Work Here    
+    // *******************
     // <ng-template [ngIf]="pValue < 5 [ngIfElse]="elseBlock">    
     //   <div>
     //    return "Red"
     //   </div>      
     // </ng-template>
 
+
+    // *******************
+    //  Nothing Work Here    
+    // *******************
     // <ng-template #elseBlock>
     //   <div>
     //     return "Green""

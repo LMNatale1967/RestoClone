@@ -7,7 +7,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 export class IsAvailablePipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(pStatus: String): string {
+    const status = pStatus == 'Available' ? 'green' : 'red';
+    return status;
+    
   }
 }
