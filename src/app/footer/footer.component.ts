@@ -8,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class FooterComponent implements OnInit {
 
-  footer = "ORDER - CHF 0.00";
+  footer = "ORDER - 0.00 CHF";
 
   constructor() {     
   }
 
   ngOnInit(): void {
+  }
+
+  ionOnlyDescription() {
+    alert("I'm a poor <ion-button> With Stranges Properties");
   }
 }

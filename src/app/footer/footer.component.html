@@ -1,3 +1,55 @@
+
 <h1 style="margin-left: 25px;">Footer Works !</h1>
 
-<h1 style="margin-left: 45px; font-size: medium;">{{footer}}</h1>
+<h1 style="margin-left: 45px; font-size: medium;">{{footer}}</h1> 
+
+<!-- Colors -->
+<div style="margin-left: 35px;">
+    <ion-button color="primary" shape="round">Primary</ion-button>
+    <ion-button color="secondary">Secondary</ion-button>
+    <ion-button color="tertiary" shape="round">Tertiary</ion-button>
+    <ion-button color="success">Success</ion-button>
+    <ion-button color="warning" shape="round">Warning</ion-button>
+    <ion-button color="danger">Danger</ion-button>
+    <ion-button color="light" shape="round">Light</ion-button>
+    <ion-button color="medium">Medium</ion-button>
+    <ion-button color="dark" shape="round">Dark</ion-button>
+</div>
+
+<!-- Round -->
+<div style="margin-left: 35px;">
+    <ion-button shape="round">Round Button</ion-button>
+</div>
+
+<!-- Fill -->
+<div style="margin-left: 35px;">
+    <ion-button shape="round" fill="outline">Outline + Round</ion-button>
+</div>
+
+<!-- Icons -->
+<div style="margin-left: 35px;">
+  <ion-button>
+   <ion-icon slot="start" name="star"></ion-icon>
+   Left Icon
+ </ion-button>
+  
+ <ion-button>
+   Right Icon
+   <ion-icon slot="end" name="star"></ion-icon>
+ </ion-button>
+  
+ <button ion-button (click)="ionOnlyDescription()">
+    <ion-icon color="danger" 
+              shape="round" 
+              size="default" 
+              slot="start" 
+              name="star"></ion-icon>   
+        Text to Display
+ </button>
+
+  
+ <!-- Sizes -->
+  <ion-button size="large">Large</ion-button>
+  <ion-button size="default">Default</ion-button>
+  <ion-button size="small">Small</ion-button>
+</div>
