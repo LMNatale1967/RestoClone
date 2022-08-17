@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -10,6 +10,7 @@ export class FooterComponent implements OnInit {
 
   footer = "ORDER - 0.00 CHF";
   totalPrice : number = 100.00;
+  @Input() price!:number;
 
   // *************************************
   // Test The Curent Status of The Worker

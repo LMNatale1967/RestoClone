@@ -72,4 +72,14 @@
       'font-weight': 'bold',
       'border': '2px solid black'
     }" title="Work With isAvailable Pipe">{{status}}</button>
+
+  &nbsp;&nbsp;&nbsp;
+  
+  <button [ngStyle]="{
+      'background-color': price|color,
+      'font-size': '25px',
+      'font-weight': 'bold',
+      'border': '2px solid black'
+  }" title="Pricate Display in Althernate mode">Price {{price | number:'.2'}} CHF</button>
+
 </div>
